@@ -2,59 +2,105 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e3f2fd;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #2196F3;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://picsum.photos/seed/picsum/1600/900') center/cover no-repeat;
+  height: 100vh;
   color: #fff;
-  padding: 15px;
   text-align: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 8px;
 }
 
-.category {
-  margin-bottom: 40px;
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2196F3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-.category h2 {
-  color: #333;
-  border-bottom: 2px solid #2196F3;
-  padding-bottom: 10px;
+.business-section {
+  padding: 60px 20px;
+  background: #f5f5f5;
+  text-align: center;
 }
 
-.tool-list {
+.business-categories {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.tool {
-  background-color: #fff;
+.business-card {
+  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 20px;
-  width: calc(33.333% - 20px);
-  text-align: center;
+  width: 300px;
+  text-align: left;
 }
 
-.tool h3 {
+.business-card h3 {
   margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-section,
+.contact-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#contact-form button {
+  padding: 10px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .tool {
-      width: calc(50% - 20px);
+  .business-categories {
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media (max-width: 480px) {
-  .tool {
-      width: 100%;
+  .business-card {
+    width: 100%;
+    max-width: 350px;
   }
 }

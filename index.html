@@ -3,59 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productivity Tools Navigator</title>
-    <link rel="stylesheet" href="Navsite.css">
+    <title>Our Company</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="Navsite.css" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Productivity Tools Navigator</h1>
-        <p>Discover the best tools to boost your productivity!</p>
-    </header>
-    <div class="container">
-        <div class="category">
-            <h2>Time Management Tools</h2>
-            <div class="tool-list">
-                <div class="tool">
-                    <h3>Tool Name 1</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <div class="tool">
-                    <h3>Tool Name 2</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <!-- 추가할 툴들 -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Innovating Your Business</h1>
+            <p>Start your journey with us today.</p>
+            <a href="#contact" class="cta-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="business" class="business-section">
+        <h2>主营业务</h2>
+        <div class="business-categories">
+            <div class="business-card">
+                <h3>1. 法人服务</h3>
+                <ol>
+                    <li>韩国法人设立支持</li>
+                    <li>银行公开户设、手机开户</li>
+                    <li>办公室租赁、记账报税</li>
+                    <li>商标注册</li>
+                    <li>本土电商入驻 Coupang/Naver</li>
+                    <li>初期陪跑商业闭环</li>
+                </ol>
+            </div>
+            <div class="business-card">
+                <h3>2. 营销推广</h3>
+                <ol>
+                    <li>排名营销</li>
+                    <li>社区营销</li>
+                    <li>社媒营销</li>
+                    <li>短视频营销</li>
+                    <li>KOL（网红）营销</li>
+                    <li>商品详情页优化</li>
+                </ol>
+            </div>
+            <div class="business-card">
+                <h3>3. 品牌建设</h3>
+                <ol>
+                    <li>行业数据分析</li>
+                    <li>品牌方向指导</li>
+                    <li>品牌故事策划</li>
+                    <li>品牌视觉设计</li>
+                    <li>品牌手册制作（BI/SI）</li>
+                    <li>品牌官网搭建</li>
+                </ol>
             </div>
         </div>
-        <div class="category">
-            <h2>Task Management & Collaboration</h2>
-            <div class="tool-list">
-                <div class="tool">
-                    <h3>Tool Name 3</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <div class="tool">
-                    <h3>Tool Name 4</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <!-- 추가할 툴들 -->
-            </div>
-        </div>
-        <div class="category">
-            <h2>Note & Document Management</h2>
-            <div class="tool-list">
-                <div class="tool">
-                    <h3>Tool Name 5</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <div class="tool">
-                    <h3>Tool Name 6</h3>
-                    <p>Short description of the tool goes here.</p>
-                </div>
-                <!-- 추가할 툴들 -->
-            </div>
-        </div>
-    </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We help businesses establish and grow in the Korean market with end-to-end support, from legal setup to brand building.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <address>
+            Seoul, Korea<br>
+            Phone: 010-1234-5678<br>
+            Email: info@example.com
+        </address>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
